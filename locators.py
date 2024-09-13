@@ -1,20 +1,54 @@
-# Главная страница
-LOGIN_BUTTON = "button[type='button'][text()='Войти в аккаунт']"  # Кнопка «Войти в аккаунт»
-REGISTER_BUTTON = "a[href='/register']"  # Кнопка «Зарегистрироваться»
-FORGOT_PASSWORD_BUTTON = "a[href='/forgot-password']"  # Кнопка «Забыли пароль?»
+class Locators:
+    # Заголовок страницы
+    TITLE = "h1"
 
-# Формы
-NAME_INPUT = "input[name='name']"  # Поле «Имя»
-EMAIL_INPUT = "input[name='email']"  # Поле «Email»
-PASSWORD_INPUT = "input[name='password']"  # Поле «Пароль»
-REGISTER_SUBMIT_BUTTON = "button[type='submit']"  # Кнопка для подтверждения регистрации
+    # Кнопка «Войти в аккаунт»
+    LOGIN_BUTTON_MAIN = ".//button[text()='Войти в аккаунт']"
 
-# Личный кабинет
-PROFILE_BUTTON = "a[href='/profile']"  # Кнопка «Личный кабинет»
-LOGOUT_BUTTON = "button[type='button'][text()='Выйти']"  # Кнопка «Выйти»
+    # Кнопка «Войти »
+    LOGIN_BUTTON = ".//button[text()='Войти']"
 
-# Конструктор
-CONSTRUCTOR_BUTTON = "a[href='/']"  # Логотип Stellar Burgers
-BUNS_TAB = "a[href='#buns']"  # Раздел «Булки»
-SAUCES_TAB = "a[href='#sauces']"  # Раздел «Соусы»
-FILLINGS_TAB = "a[href='#fillings']"  # Раздел «Начинки»
+    # Кнопка «Войти» в окне регистрации
+    REGISTRATION_LOGIN_BUTTON = "//*[@id='root']/div/main/div/div/p/a"
+
+    #Кнопка Восстановить пароль
+    FORGOT_PASSWORD_BUTTON = "//*[@id='root']/div/main/div/div/p[2]/a"
+
+    # Кнопка «Личный кабинет»
+    PERSONAL_ACCOUNT_BUTTON = "//*[@id='root']/div/header/nav/a"
+
+    # Поле «Имя»
+    NAME_INPUT = ".//label[contains(text(), 'Имя')]/following-sibling::input"
+
+    # Поле «Email»
+    EMAIL_INPUT = ".//label[contains(text(), 'Email')]/following-sibling::input"
+
+    # Поле «Пароль»
+    PASSWORD_INPUT = "input[name='Пароль']"
+
+    # Кнопка регистрации
+    REGISTER_BUTTON = "//*[@id='root']/div/main/div/div/p[1]/a"
+
+    # Логотип Stellar Burgers
+    LOGO = "//*[@id='root']/div/header/nav/div/a"
+
+    # Кнопка «Конструктор»
+    CONSTRUCTOR_BUTTON = "//*[@id='root']/div/header/nav/ul/li[1]/a/p"
+
+    # Кнопка «Выйти»
+    LOGOUT_BUTTON = "//*[@id = 'root']/div/main/div/nav/ul/li[3]/button"
+
+    # Раздел «Булки»
+    BUN_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[1]"
+
+    # Раздел «Соусы»
+    SAUCES_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[2]"
+
+    # Раздел «Начинки»
+    FILLINGS_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[3]"
+
+    #Активные состояния разделов конструктора
+
+    BUN_SECTION_ACTIVE = "//*[text()='Булки']/div[1][contains(@class, 'current')]"
+    SAUCES_SECTION_ACTIVE = "//*[text()='Соусы']/div[2][contains(@class, 'current')]"
+    FILLINGS_SECTION_ACTIVE  = "//*[text()='Начинки']/div[3][contains(@class, 'current')]"
