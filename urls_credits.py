@@ -2,12 +2,12 @@
 
 class Urls:
 
-    url_registration = "https://stellarburgers.nomoreparties.site/register"
-    url_main = "https://stellarburgers.nomoreparties.site/"
-    url_login = "https://stellarburgers.nomoreparties.site/login"
-    url_forgot_password = "https://stellarburgers.nomoreparties.site/forgot-password"
+    URL_REGISTRATION = "https://stellarburgers.nomoreparties.site/register"
+    URL_MAIN = "https://stellarburgers.nomoreparties.site/"
+    URL_LOGIN = "https://stellarburgers.nomoreparties.site/login"
+    URL_FORGOT_PASSWORD = "https://stellarburgers.nomoreparties.site/forgot-password"
 
 class Credits:
 
-    login_user='testtestov4444@yandex.ru'
-    password_user='123456'
+    LOGIN_USER='testtestov4444@yandex.ru'
+    PASSWORD_USER='123456'

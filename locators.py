@@ -1,6 +1,4 @@
 class Locators:
-    # Заголовок страницы
-    TITLE = "h1"
 
     # Кнопка «Войти в аккаунт»
     LOGIN_BUTTON_MAIN = ".//button[text()='Войти в аккаунт']"
@@ -9,13 +7,7 @@ class Locators:
     LOGIN_BUTTON = ".//button[text()='Войти']"
 
     # Кнопка «Войти» в окне регистрации
-    REGISTRATION_LOGIN_BUTTON = "//*[@id='root']/div/main/div/div/p/a"
-
-    #Кнопка Восстановить пароль
-    FORGOT_PASSWORD_BUTTON = "//*[@id='root']/div/main/div/div/p[2]/a"
-
-    # Кнопка «Личный кабинет»
-    PERSONAL_ACCOUNT_BUTTON = "//*[@id='root']/div/header/nav/a"
+    REGISTRATION_LOGIN_BUTTON = ".//a[text()='Войти']"
 
     # Поле «Имя»
     NAME_INPUT = ".//label[contains(text(), 'Имя')]/following-sibling::input"
@@ -27,25 +19,28 @@ class Locators:
     PASSWORD_INPUT = "input[name='Пароль']"
 
     # Кнопка регистрации
-    REGISTER_BUTTON = "//*[@id='root']/div/main/div/div/p[1]/a"
+    REGISTER_BUTTON = ".//button[text()='Зарегистрироваться']"
 
     # Логотип Stellar Burgers
-    LOGO = "//*[@id='root']/div/header/nav/div/a"
+    LOGO = ".//a"
 
     # Кнопка «Конструктор»
-    CONSTRUCTOR_BUTTON = "//*[@id='root']/div/header/nav/ul/li[1]/a/p"
+    CONSTRUCTOR_BUTTON = "//p[text() = 'Конструктор']"
+
+    # Кнопка «Личный кабинет»
+    PERSONAL_ACCOUNT_BUTTON = "//p[text() = 'Личный Кабинет']"
 
     # Кнопка «Выйти»
-    LOGOUT_BUTTON = "//*[@id = 'root']/div/main/div/nav/ul/li[3]/button"
+    LOGOUT_BUTTON = ".//button[text()='Выход']"
 
     # Раздел «Булки»
-    BUN_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[1]"
+    BUN_SECTION = "//div[1]"
 
     # Раздел «Соусы»
-    SAUCES_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[2]"
+    SAUCES_SECTION = "//div[2]"
 
     # Раздел «Начинки»
-    FILLINGS_SECTION = "//*[@id='root']/div/main/section[1]/div[1]/div[3]"
+    FILLINGS_SECTION = "//div[3]"
 
     #Активные состояния разделов конструктора
 

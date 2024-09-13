@@ -3,9 +3,7 @@ import random
 import string
 import pytest
 from selenium import webdriver
-from locators import Locators
-from urls_credits import Credits
-from selenium.webdriver.common.by import By
+
 
 @pytest.fixture(scope='session')
 def user_name():
@@ -46,9 +44,4 @@ def driver():
     yield driver
     driver.quit()
 
-#@pytest.fixture(scope='session')
-#def ver_user(driver):
-#    driver.find_element(By.XPATH, Locators.EMAIL_INPUT).send_keys(Credits.login_user)
- #   driver.find_element(By.CSS_SELECTOR, Locators.PASSWORD_INPUT).send_keys(Credits.password_user)
- #   driver.find_element(By.XPATH, Locators.LOGIN_BUTTON).click()
- #   yield driver.current_url
+
